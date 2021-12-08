@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "name": "Daniel Kędzior",
+        "email": "bam0@gmail.com"
+    },
+    {
+        "id":2,
+        "name": "Szymon Nowok",
+        "email": "nowok@gmail.com"
+    },
+    {
+        "id":3,
+        "name": "Kacper Mnich",
+        "email": "mnichhuu@gmail.com"
+    },
+    {
+        "id":4,
+        "name": "Oskar Żmija",
+        "email": "zmij@gmail.com"
+    }
+]
