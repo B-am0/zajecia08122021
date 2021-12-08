@@ -16,12 +16,13 @@
     <script type="text/javascript">
         document.getElementById("mojformularz").addEventListener("submit",sprawdzstan);
         function sprawdzstan(event){
-            event.prevetDefault();
+            event.preventDefault();
             var nazwa = document.getElementById("mojstan").value;
             var xhr = new XMLHttpRequest();
             xhr.open('GET','sprawdz.php?stan='+nazwa,true);
             xhr.onload = function(){
                 console.log(this.responseText);
+                document.getElementsByTagName("div")[0].innerHTML = this.responseText;
             }
             xhr.send();
         }
