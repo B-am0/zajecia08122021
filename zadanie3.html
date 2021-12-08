@@ -14,7 +14,13 @@
 
     </div>
     <script type="text/javascript">
-        
+        document.getElementById("mojformularz").addEventListener("submit",sprawdzstan);
+        function sprawdzstan(event){
+            event.prevetDefault();
+            var nazwa = document.getElementById("mojstan").value;
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET','sprawdz.php?stan='+nazwa,true);
+        }
     </script>
 </body>
 </html>
